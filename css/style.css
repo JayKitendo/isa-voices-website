@@ -1085,5 +1085,14 @@ footer {
 
     .about-img {
         width: 100px;
+
+        /* delete this bellow if it crushes*/
+
+        
     }
 }
+@media (max-width: 768px) {
+    #home {
+        height: auto;
+        min-height: 100vh;
+        background-position: top;
