@@ -1093,6 +1093,5 @@ footer {
 }
 @media (max-width: 768px) {
     #home {
-        height: auto;
-        min-height: 100vh;
-        background-position: top;
+        height: 100vh;
+        background-position: 70% center;
