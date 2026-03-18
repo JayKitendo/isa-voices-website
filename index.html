@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" />
+    <title>ISA Voices</title>
+    <!-- Icons font aswsome V 6.2.1 Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Bootstrap -->
+    <!-- CDN -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <!-- CDN Icons -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
+    <!-- Local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Local Icons -->
+    <link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.min.css">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-smooth-scroll="true"> <!--Scrollspy-->
+    <!-- Start nav -->
+    <nav id="navbar-example" class="navbar navbar-expand-lg fixed-top"><!--Scrollspy-->
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-semibold" href="#">ISA Voices</a>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-justify text-light fs-3"></span>
+            </button>
+            <div class="offcanvas offcanvas-start overflow-y-auto" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Dropdown
+                                <span class="bi bi-chevron-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Drop down1</a></li>
+                                <li class="dropdown-item deep-dropdown">
+                                    <a class="" href="#">DeepDropdown
+                                        <span class="bi bi-chevron-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu sub-menu d-none">
+                                        <li><a class="sub-menu-item" href="#">Deep Drop down1</a></li>
+                                        <li><a class="sub-menu-item" href="#">Deep Drop down2</a></li>
+                                        <li><a class="sub-menu-item" href="#">Deep Drop down3</a></li>
+                                        <li><a class="sub-menu-item" href="#">Deep Drop down4</a></li>
+                                        <li><a class="sub-menu-item" href="#">Deep Drop down5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Drop down2</a></li>
+                                <li><a class="dropdown-item" href="#">Drop down3</a></li>
+                                <li><a class="dropdown-item" href="#">Drop down4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="large-screen d-lg-block d-none">
+                <ul class="navbar-nav gap-4 mb-2 mb-lg-0 nav nav-tabs" role="tablist">
+                    <!--Scrollspy-->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+                            Dropdown
+                            <span class="bi bi-chevron-down"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Drop down1</a></li>
+                            <li class="dropdown-item deep-dropdown">
+                                <a class="" href="#">Deep Drop down
+                                    <span class="bi bi-chevron-right"></span>
+                                </a>
+                                <ul class="dropdown-menu sub-menu d-none">
+                                    <li><a class="sub-menu-item" href="#">Deep Drop down1</a></li>
+                                    <li><a class="sub-menu-item" href="#">Deep Drop down2</a></li>
+                                    <li><a class="sub-menu-item" href="#">Deep Drop down3</a></li>
+                                    <li><a class="sub-menu-item" href="#">Deep Drop down4</a></li>
+                                    <li><a class="sub-menu-item" href="#">Deep Drop down5</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Drop down2</a></li>
+                            <li><a class="dropdown-item" href="#">Drop down3</a></li>
+                            <li><a class="dropdown-item" href="#">Drop down4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav -->
+    <!-- Start Home -->
+    <header id="home">
+        <div class="container">
+            <div class="home-content d-flex justify-content-center align-items-center vh-100">
+                <div class="home-caption text-light text-center">
+                    <h1 class="text-light">I am Jumaa Kitendo</h1>
+                    <p class="animated-letters">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Home -->
+    <main>
+        <!-- Start About -->
+        <section id="about" class="sec-pt-4 mb-5">
+            <div class="container ">
+                <div class="about-content bg-light shadow p-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row mb-4">
+                                <div class="col-5">
+                                    <div class="about-img">
+                                        <img src="images/my-profile.jpg" alt="testimonial-2" class="img-fluid rounded b-shadow-a" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="about-info ">
+                                        <p><span class="text-capitalize">name: </span>Jumaa Kitendo</p>
+                                        <p><span class="text-capitalize">profile: </span>Senior Project Researcher</p>
+                                        <p><span class="text-capitalize">email: </span><a
+                                                href="mailto:contact@example.com">jukitendo@aquinashs.net</a>
+                                        </p>
+                                        <p><span class="text-capitalize">phone: </span><a
+                                                href="tel:(617) 557-0089">(951) 855-4025</a> </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="">
+                                        <h5 class="fs-6 text"></h5>
+                                        <span class="mb-1 d-block">Experience Homesickness 85%</span>
+                                        <div class="progress mb-3" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 85%"></div>
+                                        </div>
+                                        <span class="mb-1 d-block">Academic pressure 75%</span>
+                                        <div class="progress mb-3" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 75%"></div>
+                                        </div>
+                                        <span class="mb-1 d-block">Culture Shock 90%</span>
+                                        <div class="progress mb-3" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 90%"></div>
+                                        </div>
+                                        <span class="mb-1 d-block">Language Barriers 60%</span>
+                                        <div class="progress mb-3" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-me">
+                                <div class="sm-title mb-4">
+                                    <h4>The Project Mission</h4>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="lead">International student-athletes are often seen only for their perfomance on the field/court 
+                                    but behind every jersey is a teenager navigating a massive life transition. My research
+                                    explores the silent challenges of moving across the world, from the heartbreak of 
+                                    missing family milestones to the stress of maintaining a high GPA in a second/third language.
+                                </p>
+                                <p class="lead">This website serves as a resource and a voice for those athletes. By sharing 
+                                    real stories and data, I hope to help schools, coaches, and families better support the next
+                                    generation of international students as they chase their dreams far from home.
+                                </p>
+                                <p class="lead">Beyond just identifying problems, this project aims to bridge the gap between international 
+                                    athletes and their new communities. Through awareness and shared experiences, we can create a Culture 
+                                    where student-athlets do not just survive their time abroad, but truly thrive, both in their sport and 
+                                    in their personal lives.</p>
+                                    <div class="research-note" style="background: #f3f3f3; padding: 20px; border-left: 5px solid #0078ff; margin-top: 20px;">
+                                        <p><strong>Key Finding:</strong> According to Goyen (2023), relationships with teammates are just as important as language or money.
+                                        A supportive coach can prevent an athlete from quitting.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+        <!-- Start Services -->
+        <section id="services" class="sec-pt-4">
+            <div class="container">
+                <div class="services-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title mb-5">
+                                <h3 class="text-uppercase">Key Challenges</h3>
+                                <p>Navigating life as an international student-athlete means balancing a high-pressure sports
+                                    career with the hidden emotional and academic hurdles of living far from home.</p>
+                                <div class="line m-auto" style="width: 40px; height:5px"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="mental-health.html" style="text-decoration: none; color: inherit;">
+                            <div class="service-card bg-light rounded-4 text-center mb-5">
+                                <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="bi bi-heart"></span>
+                                </div>
+                                <h4 class="text-uppercase">Mental Health & Homesickness</h4>
+                                <p>The emotional weight of being thousand of miles from home while trying to perform
+                                    at a high level. Manu athletes struggle with lonileness and the pressure to 'stay 
+                                    strong' for their team and family.</p>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="academics.html" style="text-decoration: none; color: inherit;">
+                            <div class="service-card bg-light rounded-4 text-center mb-5">
+                                <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="bi bi-book"></span>
+                                </div>
+                                <h4 class="text-uppercase">Academic Pressure</h4>
+                                <p>International students must maintain a high GPA to stay eligible for sports. Balancing
+                                    8 hours of classes with 3-5 hours of practice creates a massive time-management challenge.</p>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="culture-shock.html" style="text-decoration: none; color: inherit;">
+                            <div class="service-card bg-light rounded-4 text-center mb-5">
+                                <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="bi bi-globe"></span>
+                                </div>
+                                <h4 class="text-uppercase">Culture Shock</h4>
+                                <p>Adjusting to new food, different slang, and familier classroom rules. Simple things
+                                    like how to talk to a coach or a teacher can feel completely different in a new country. Research from 
+                                Marshall University shows that not understanding locker room humor or idioms is an 'invisible barrier' that
+                            makes athletes stay quiet and feel lonely.</p>
+                            </div>
+                        </a> </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="language-barriers.html" style="text-decoration: none; color: inherit;">
+                            <div class="service-card bg-light rounded-4 text-center mb-5">
+                                <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="bi bi-chat-dots"></span>
+                                </div>
+                                <h4 class="text-uppercase">Language Barriers</h4>
+                                <p>Even for students who speak English, the fast-paced environment and sports specific
+                                    terminology can be overwhelming. This barrier can lead to misunderstandings on and off
+                                    field</p>
+                            </div>
+                       </a> </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="training-load.html" style="text-decoration: none; color: inherit;">
+                            <div class="service-card bg-light rounded-4 text-center mb-5">
+                                <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="bi bi-trophy"></span>
+                                </div>
+                                <h4 class="text-uppercase">Athletic Training Load</h4>
+                                <p>The intensity of American high school sports is often higher than home. The physical
+                                    toll of daily training, travel for games, and recovery is constant struggle for students
+                                    -athletes.</p>
+                                </a></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="distance.html" style="text-decoration: none; color: inherit;">
+                            <div class="service-card bg-light rounded-4 text-center mb-5">
+                                <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="bi bi-house-door"></span>
+                                </div>
+                                <h4 class="text-uppercase">Distance from Family</h4>
+                                <p>Dealing with time-zone differences makes it hard to call home. When things go wrong, not 
+                                    having a parent or sibling nearby to talk to can make the journey feel very isolated.</p>
+                                </a></div>
+
+                            <div class="container">
+                                <h3>Athlete Survival Guide</h3>
+                                <ul>
+                                    <li><strong>Language:</strong> Practice eye contact and speaking up (American coaches expect this!).</li>
+                                    <li><strong>Social:</strong> Do not be afraid to ask about slang or jokes you don't understand.</li>
+                                    <li><strong>Support:</strong> Find one teammate you trust to help with rides and advice.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services -->
+        <!-- Start Facts -->
+        <section id="facts">
+            <div class="container">
+                <div class="facts-content">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="facts-card text-center text-light">
+                                <div
+                                    class="icon d-flex justify-content-center align-items-center rounded-circle text-light">
+                                    <span class="bi bi-globe"></span>
+                                </div>
+                                <span class="fs-2">8,000</span>
+                                <p>MILES FROM HOME</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="facts-card text-center text-light">
+                                <div
+                                    class="icon d-flex justify-content-center align-items-center rounded-circle text-light">
+                                    <span class="bi bi-clock"></span>
+                                </div>
+                                <span class="fs-2">34</span>
+                                <p>HOURS TRAINING / WEEK</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="facts-card text-center text-light">
+                                <div
+                                    class="icon d-flex justify-content-center align-items-center rounded-circle text-light">
+                                    <span class="bi bi-journal-check"></span>
+                                </div>
+                                <span class="fs-2">3.5</span>
+                                <p>GPA TO MAINTAIN</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="facts-card text-center text-light">
+                                <div
+                                    class="icon d-flex justify-content-center align-items-center rounded-circle text-light">
+                                    <span class="bi bi-people"></span>
+                                </div>
+                                <span class="fs-2">12</span>
+                                <p>COUNTRIES REPRESENTED</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Facts -->
+        <!-- Start Portfolio -->
+        <section id="Athlete Stories." class="sec-pt-4">
+            <div class="container">
+                <div class="portfolio-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title mb-5">
+                                <h3 class="text-uppercase">Athlete Stories</h3>
+                                <p>Real perspective from students balancing international life and elite sports.</p>
+                                <div class="line m-auto" style="width: 40px; height:5px"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-card bg-light rounded-4 mb-5">
+                                <div class="card">
+                                    <div class="portfolio-img">
+                                        <a href="my-story.html"
+                                        <img src="images/my-story.jpg" class="card-img-top" alt="My Journey" style="width: 100%; height: auto; display: block;">
+                                    </a>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="portfolio-body text-center">
+                                            <h5 class="card-title">From Tanzania to California.</h5>
+                                            <ol class="breadcrumb d-flex justify-content-center">
+                                                <li class="breadcrumb-item">Student-Athlete Experience.
+                                                </li>
+                                                <li class="breadcrumb-item">JSerra / Aquinas HS.</li>
+                                            </ol>
+                                        </div>
+                                        <div class="icon ms-3">
+                                            <a href="my-story.html"><span class="bi bi-book" style="font-size: 2rem;"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                       
+                       
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio -->
+        <!-- Start Testimonials -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="testimonials-content text-light text-center">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-12">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                                data-bs-touch="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="3000">
+                                        <div class="testimonials-card mb-5 pb-1">
+                                            <div class="testimonials-img mb-3 m-auto">
+                                                <img src="images/my-profile.jpg" class="d-block rounded-circle"
+                                                    alt="testimonials-1">
+                                            </div>
+                                            <div class="testimonials-caption">
+                                                <h5 class="text-uppercase text-light">Jumaa kitendo</h5>
+                                                <p class="lead">"I am not just playing for stats; I am playing to change my family's future.
+                                                    This platform is for every athlete who is told they are just a player, when they are actually a pioneer."
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="testimonials-card mb-5 pb-1">
+                                            <div class="testimonials-img mb-3 m-auto">
+                                                <img src="images/testimonial-4.jpg" class="d-block rounded-circle"
+                                                    alt="testimonials-2">
+                                            </div>
+                                            <div class="testimonials-caption">
+                                                <h5 class="text-uppercase text-light">Marta Socrate</h5>
+                                                <p class="lead">Curabitur arcu erat, accumsan id imperdiet et,
+                                                    porttitor
+                                                    at
+                                                    sem. Lorem ipsum dolor sit amet,
+                                                    consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End Testimonials -->
+        <!-- Start Blog -->
+        <section id="blog" class="sec-pt-4">
+            <div class="container">
+                <div class="blog-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title mb-5">
+                                <h3 class="text-uppercase">THE PLAYBOOK</h3>
+                                <p>Essential guides for navigating life, and performance in American athletics.</p>
+                                <div class="line m-auto" style="width: 40px; height:5px"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-card bg-light rounded-4 mb-5">
+                                <div class="card">
+                                    <div class="blog-img">
+                                        <a href="academics.html"><img src="images/visa-legal.jpg" class="card-img-top"
+                                                alt="work-1"></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="blog-body position-relative">
+                                            <div
+                                                class="blog-label text-uppercase text-light rounded-2 bg-primary d-inline-block p-2 position-absolute start-50 translate-middle">
+                                                <span>VISA & LEGAL</span>
+                                            </div>
+                                            <h4 class="card-title pt-2"><a href="#">Maintaining Your Status: A Guide for F-1 Athletes</a></h4>
+                                            <p>
+                                                Learn the critical rules about GPA requirements and credit hours that keep your visa valid while you compete.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="card-footer text-body-secondary d-flex justify-content-between align-items-center">
+                                        <div class="blog-author-content d-flex gap-2 align-items-end">
+                                            <div class="blog-avatar">
+                                                <img src="images/my-profile.jpg" alt="blog-avatar-small-img"
+                                                    class="rounded-circle">
+                                            </div>
+                                            <h5 class="blog-author">
+                                                <a href="#">Jumaa Kitendo</a>
+                                            </h5>
+                                        </div>
+                                        <div class="blog-date">
+                                            <span class="bi bi-clock"></span>
+                                            10 min
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-card bg-light rounded-4 mb-5">
+                                <div class="card">
+                                    <div class="blog-img">
+                                        <a href="academics.html"><img src="images/health.jpg" class="card-img-top"
+                                                alt="work-1"></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="blog-body position-relative">
+                                            <div
+                                                class="blog-label text-uppercase text-light rounded-2 bg-primary d-inline-block p-2 position-absolute start-50 translate-middle">
+                                                <span>HEALTH</span>
+                                            </div>
+                                            <h4 class="card-title pt-2"><a href="#">Nutritional for the International Competitor</a></h4>
+                                            <p>
+                                                How to balance American cafeteria food with the healthy, home cooked diet needed for elite preformance.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-footer text-body-secondary d-flex justify-content-between align-items-center">
+                                        <div class="blog-author-content d-flex gap-2 align-items-end">
+                                            <div class="blog-avatar">
+                                                <img src="images/my-profile.jpg" alt="blog-avatar-small-img"
+                                                    class="rounded-circle">
+                                            </div>
+                                            <h5 class="blog-author">
+                                                <a href="#">Jumaa Kitendo</a>
+                                            </h5>
+                                        </div>
+                                        <div class="blog-date">
+                                            <span class="bi bi-clock"></span>
+                                            10 min
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-card bg-light rounded-4 mb-5">
+                                <div class="card">
+                                    <div class="blog-img">
+                                        <a href="mental-health.html"><img src="images/wellness.jpg" class="card-img-top"
+                                                alt="work-1"></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="blog-body position-relative">
+                                            <div
+                                                class="blog-label text-uppercase text-light rounded-2 bg-primary d-inline-block p-2 position-absolute start-50 translate-middle">
+                                                <span>WELLNESS</span>
+                                            </div>
+                                            <h4 class="card-title pt-2"><a href="#">Combatting the 'Support Vacuum'</a></h4>
+                                            <p>
+                                                Practical strategies for staying mentally sharp when you are thousands of miles away from your primary 
+                                                support system.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="card-footer text-body-secondary d-flex justify-content-between align-items-center">
+                                        <div class="blog-author-content d-flex gap-2 align-items-end">
+                                            <div class="blog-avatar">
+                                                <img src="images/my-profile.jpg" alt="blog-avatar-small-img"
+                                                    class="rounded-circle">
+                                            </div>
+                                            <h5 class="blog-author">
+                                                <a href="#">Jumaa Kitendo</a>
+                                            </h5>
+                                        </div>
+                                        <div class="blog-date">
+                                            <span class="bi bi-clock"></span>
+                                            10 min
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog -->
+        <!-- Start contact -->
+        <section id="contact" class="sec-pt-4">
+            <div class="container">
+                <div class="contact-content bg-light shadow p-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="message-us">
+                                <div class="sm-title mb-4">
+                                    <h4>Share Your Story (Anonymous)</h4>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="contact-form">
+                                    <form action="https://formspree.io/f/xojknoop" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                    <input type="text" name="athlete_name" class="form-control" placeholder="Your Name (Optional)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div calss="form-group">
+                                                    <input type="email" name="_replyto" class="form-control" placeholder="Your Email (optional)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mn-3">
+                                                <div class="form-group">
+                                                    <input type="text" name="sport_country" class="form-control" placeholder="Your Sport & Country">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" name="message" rows="5" placeholder="What is your biggest challenge(s)?"></textarea>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="_next" value="https://your-website-url.com/thanks.html">
+
+                                            <div class="col-md-12 text-center mt-3">
+                                                <button type="submit" class="button button-a button-big button-rounded">Submit My Story</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="get-in-touch">
+                                <div class="sm-title mb-4">
+                                    <h4>Get in Touch</h4>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="lead mb-4">Are you an International Student-Athlete with a story to tell?
+                                    Your experiences can help the next generation of pioneers.
+                                    Submit your challenges or successes, and we will feature your voices in our "Athlete Stories" gallery.
+                                </p>
+                                <ul class="contact-info mb-4">
+                                    <li><span class="bi bi-geo-alt"></span>San Bernardino, California</li>
+                                    <li><span class="bi bi-phone"></span><a href="tel:(951) 855-4025">(951) 855-4025</a></li>
+                                    <li><span class="bi bi-envelope"></span><a
+                                            href="mailto:contact@example.com">contact@isavoices.com</a></li>
+                                </ul>
+                                <ul class="social-links d-flex gap-2">
+                                    <li class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                        <a href="#"><span class="bi bi-facebook"></span></a>
+                                    </li>
+                                    <li class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                        <a href="#"><span class="bi bi-instagram"></span></a>
+                                    </li>
+                                    <li class="icon d-flex justify-content-center align-items-center rounded-circle">
+                                        <a href="#"><span class="bi bi-twitter"></span></a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End contact -->
+    </main>
+    <section id="citations" class="container" style="padding: 60px 0; background-color: #f8f9fa; margin-top: 40px; border-radius: 10px;">
+        <div class="section-title" style="text-align: center; margib-bottom: 30px;">
+            <h2>Works Cited</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul style="list-style: none; line-height: 2; font-size: 14px; color: #4e4e4e; padding-left: 20px;">
+                    <li style="text-indent: -2em; padding-left: 2em; margin-bottom: 10px;">"Culture Barriers Faced by International Student Athletes."<em>Marshall Digital Scholar</em>, Marshall University,</li>
+                    <li style="text-indent: -2em; padding-left: 2em; margin-bottom: 10px;">"Dislocation and Adjustment of International Student-Athlete."<em>University of San Francisco Theses</em>, 2015.</li>
+                    <li style="text-indent: -2em; padding-left: 2em; margin-bottom: 10px;">F1000Research."Japanese International Student-Athletes' Adjustment Experience at U.S. Universities." 2022.</li>
+                    <li style="text-indent: -2em; padding-left: 2em; margin-bottom: 10px;">Goyen, Chenelle R. "Examining the Impact of Cultural Adjustment on International Student-Athletes Attending NCAA Division 1 Institutions."<em>University of Georgia</em>, 2023.</li>
+                    <li style="text-indent: -2em; padding-left: 2em; margin-bottom: 10px;">"Culture Shock: UIW International Athletes Share Their Experinces."<em>UIW Logos</em>, 29 Sept. 2025.</li>
+                    <li style="text-indent: -2em; padding-left: 2em; margin-bottom: 10px;"><em>A Longitudinal Mixed Methods Case Study Investigation of the Holistic Impact of Sport-School Involvement on Student Athletes.</em> PMC - NIH, 2024.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Copyright 2026 <strong>ISA Voices</strong>. All Rights Reserved</p>
+                        <div class="credits">
+                            Developed as a Senior Research Project | <a href="index.html">Kitendo Framework</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <!-- ٍStart up arrow -->
+    <a href="#home"
+        class="arrow-up-icon d-flex justify-content-center align-items-center rounded-circle text-light fs-5 position-fixed bg-primary">
+        <span class="bi bi-arrow-up"></span>
+    </a>
+    <!-- End up arrow -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
